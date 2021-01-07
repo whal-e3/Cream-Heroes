@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import youtube from '../api/youtube';
 
-const useVideos = defaultSearchTerm => {
+const useCreamHeroes = defaultSearchTerm => {
 	const [videos, setVideos] = useState([]);
 
 	useEffect(() => {
@@ -11,7 +11,7 @@ const useVideos = defaultSearchTerm => {
 	const search = async term => {
 		const response = await youtube.get('/search', {
 			params: {
-				channelId: 'UCwcsDWGip6vtiZyCnvDoClQ',
+				channelId: 'UCmLiSrat4HW2k07ahKEJo4w',
 				type: 'video',
 				q: term
 			}
@@ -23,8 +23,4 @@ const useVideos = defaultSearchTerm => {
 	return [videos, search];
 };
 
-export default useVideos;
-
-// 크림히어로즈 : UCmLiSrat4HW2k07ahKEJo4w
-// Kittisaurus : UCwcsDWGip6vtiZyCnvDoClQ
-// 크집사 : UCkuA_gDjISfGgbdp02BUwyQ
+export default useCreamHeroes;

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
 import VideoItem from './VideoItem';
-import useVideos from '../../hook/useVideos';
+import useButler from '../../../hook/useButler';
 
 const VideoMenu = () => {
-	const [videos, searchVideos] = useVideos('루루');
+	const [videos, searchVideos] = useButler('코코');
 	const [selectedVideo, setSelectedVideo] = useState(null);
 
 	useEffect(() => {
@@ -24,3 +24,6 @@ const VideoMenu = () => {
 };
 
 export default VideoMenu;
+
+// multiple videoItem tag but hide two of them
+// create hooks - useVideos -> = useKittisaurus, useCreamHeroes, useButler
