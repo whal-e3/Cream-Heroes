@@ -1,7 +1,5 @@
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import youtube from '../api/youtube';
-import SearchBar from '../components/videoMenu/SearchBar';
 
 const useVideos = defaultSearchTerm => {
 	const [videos, setVideos] = useState([]);
