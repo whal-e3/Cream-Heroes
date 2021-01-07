@@ -8,13 +8,13 @@ import ButlerMenu from './videoMenu/butler/VideoMenu';
 const App = () => {
 	return (
 		<div>
-			<Route>
+			<Route path='/'>
 				<CreamMenu />
 			</Route>
-			<Route>
+			<Route path='/kittisaurus'>
 				<KittiMenu />
 			</Route>
-			<Route>
+			<Route path='/claireLuvcat'>
 				<ButlerMenu />
 			</Route>
 		</div>
