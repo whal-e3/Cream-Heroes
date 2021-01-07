@@ -11,9 +11,7 @@ const useVideos = defaultSearchTerm => {
 	const search = async term => {
 		const response = await youtube.get('/search', {
 			params: {
-				channelId: 'UCmLiSrat4HW2k07ahKEJo4w',
 				channelId: 'UCwcsDWGip6vtiZyCnvDoClQ',
-				channelId: 'UCkuA_gDjISfGgbdp02BUwyQ',
 				type: 'video',
 				q: term
 			}
@@ -26,3 +24,7 @@ const useVideos = defaultSearchTerm => {
 };
 
 export default useVideos;
+
+// 크림히어로즈 : UCmLiSrat4HW2k07ahKEJo4w
+// Kittisaurus : UCwcsDWGip6vtiZyCnvDoClQ
+// 크집사 : UCkuA_gDjISfGgbdp02BUwyQ
