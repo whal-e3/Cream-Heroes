@@ -5,7 +5,7 @@ import VideoItem from './VideoItem';
 import useVideos from '../../hook/useVideos';
 
 const VideoMenu = () => {
-	const [videos, searchVideos] = useVideos('cream heroes');
+	const [videos, searchVideos] = useVideos('루루');
 	const [selectedVideo, setSelectedVideo] = useState(null);
 
 	useEffect(() => {
