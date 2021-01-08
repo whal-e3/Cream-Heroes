@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from './SearchBar';
-import VideoList from './VideoList';
+import VideoList from '../VideoList';
 import VideoItem from './VideoItem';
 import useCreamHeroes from '../../../hook/useCreamHeroes';
 
 const VideoMenu = () => {
 	const [videos, searchVideos] = useCreamHeroes('디디');
-
-	// useState for 크집사
 	const [selectedVideo, setSelectedVideo] = useState(null);
 
 	useEffect(() => {
@@ -26,6 +24,3 @@ const VideoMenu = () => {
 };
 
 export default VideoMenu;
-
-// multiple videoItem tag but hide two of them
-// create hooks - useVideos -> = useKittisaurus, useCreamHeroes, useButler

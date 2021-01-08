@@ -16,7 +16,6 @@ const useCreamHeroes = defaultSearchTerm => {
 				q: term
 			}
 		});
-		console.log(response.data.items);
 		setVideos(response.data.items);
 	};
 

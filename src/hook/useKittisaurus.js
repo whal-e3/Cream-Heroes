@@ -16,7 +16,6 @@ const useKittisaurus = defaultSearchTerm => {
 				q: term
 			}
 		});
-		console.log(response.data.items);
 		setVideos(response.data.items);
 	};
 

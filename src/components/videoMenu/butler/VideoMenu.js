@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from './SearchBar';
-import VideoList from './VideoList';
+import VideoList from '../VideoList';
 import VideoItem from './VideoItem';
 import useButler from '../../../hook/useButler';
 
@@ -24,6 +24,3 @@ const VideoMenu = () => {
 };
 
 export default VideoMenu;
-
-// multiple videoItem tag but hide two of them
-// create hooks - useVideos -> = useKittisaurus, useCreamHeroes, useButler
